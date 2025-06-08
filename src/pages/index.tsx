@@ -75,7 +75,7 @@ export function IndexPage() {
 
   return (
     <DefaultLayout>
-      <section className="flex flex-col items-center gap-8 py-8 md:py-10 bg-gray-100 min-h-screen w-full">
+      <section className="flex flex-col items-center bg-gray-100 min-h-screen w-full">
         <div className="w-full max-w-3xl px-4 space-y-8">
           {Object.entries(departuresByStation).map(([stationName, deps]) => {
             const lines = deps.reduce(
